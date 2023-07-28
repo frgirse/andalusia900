@@ -1,9 +1,10 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Provider from './context/AuthContext'
-import ToasterContext from './context/ToasterContext'
+import './globals.css';
+import { Architects_Daughter } from '@next/font/google';
+import Provider from './context/AuthContext';
+import ToasterContext from './context/ToasterContext';
+import { Header } from './components';
 
-const inter = Inter({ subsets: ['latin'] })
+const archidaught = Architects_Daughter ({ weight: "400", subsets: ["latin"]}),
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}><Provider><ToasterContext />{children}</Provider></body>
+      <body className={archidaught.className}><Provider><ToasterContext />{children}</Provider></body>
     </html>
   )
 }
