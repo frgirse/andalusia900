@@ -1,10 +1,9 @@
 import './globals.css';
-import { Architects_Daughter } from '@next/font/google';
+import { archidaught } from '../Utils/fonts.jsx';
 import Provider from './context/AuthContext';
 import ToasterContext from './context/ToasterContext';
 import { Header } from './components';
 
-const archidaught = Architects_Daughter ({ weight: "400", subsets: ["latin"]}),
 
 export const metadata = {
   title: 'Create Next App',

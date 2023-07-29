@@ -1,9 +1,9 @@
 'use client'
 
 import { signIn, signOut } from "next-auth/react";
-import { Github, LogOut } from "lucide-react"
+import { Github, LogOut } from "lucide-react";
 
-import { Button } from "../ui/button";
+import { Button } from "./ui/button"
 
 interface SignButtonProps { currentUser?: any }
 
